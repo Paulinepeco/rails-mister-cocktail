@@ -1,0 +1,9 @@
+<div class="coktails-form">
+  <%= simple_form_for(@rcocktails) do |f| %>
+    <%= f.error_notification %>
+
+    <%= f.input :name %>
+
+    <%= f.button :submit %>
+  <% end %>
+</div>

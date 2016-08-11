@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="content col-xs-12 col-sm-3">
+
+      <h1><%= @cocktail.name %></h1>
+      <h3>Composition:</h3>
+      <%= link_to "Back", cocktails_path %> |
+    </div>
+
+    <div class="col-xs-12 col-sm-6 image_container">
+          <%= image_tag "test.jpg", class: "image" %>
+    </div>
+  </div>
+</div>
