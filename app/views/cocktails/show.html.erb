@@ -4,7 +4,16 @@
 
       <h1><%= @cocktail.name %></h1>
       <h3>Composition:</h3>
+      <ul>
+        <% @cocktail.doses.each do |dose| %>
+          <li><%= dose.description %> <%= dose.ingredient.name %>
+          <%= link_to cocktail_dose_path(@cocktail), method: :delete do %>
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+          <% end %>
+        <% end %>
+      </ul>
       <%= link_to "Back", cocktails_path %> |
+      <%= link_to "Add new ingredient", new_cocktail_dose_path(@cocktail) %>
     </div>
 
     <div class="col-xs-12 col-sm-6 image_container">
@@ -12,3 +21,4 @@
     </div>
   </div>
 </div>
+
