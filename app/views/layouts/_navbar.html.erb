@@ -4,22 +4,24 @@
     <%= image_tag "logo.png" %>
   <% end %>
 
+
+
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Search form -->
-    <form action="" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+    <div action="" class="navbar-wagon-search">
+      <input class="input" style="border:none, outline:none" type="text" name="clock" size="7" placeholder="Search a Cocktail">
       <button type="submit" class="navbar-wagon-search-btn">
         <i class="fa fa-search"></i>
       </button>
-    </form>
+    </div>
 
     <!-- Button (call-to-action) -->
 
-    <button type="button" class="navbar-wagon-item navbar-wagon-button btn" data-toggle="modal" data-target="#myModal">
-      New cocktail !
-    </button>
+    <p type="button" class="navbar-wagon-item navbar-wagon-link text-center" data-toggle="modal" data-target="#myModal">
+      Add a new cocktail !
+    </p>
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

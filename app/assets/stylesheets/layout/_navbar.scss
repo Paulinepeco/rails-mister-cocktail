@@ -1,10 +1,10 @@
 /* Main class */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: #1A1824;
   transition: all 0.3s ease;
   display: flex;
-  height: 70px;
+  height: 50px;
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 
 /* Navbar logo */
 .navbar-wagon-brand img {
-  width: 50px;
+  width: 40px;
 }
 
 /* Navbar right section (with form, links, button) */
@@ -42,6 +42,7 @@
 .navbar-wagon-link {
   color: $red;
   font-size: 14px;
+  margin-top: 10px;
 }
 .navbar-wagon-link:hover {
   color: #da552f;
@@ -70,17 +71,17 @@
   flex: 0 1 300px;
   display: flex;
   justify-content: flex-end;
-  padding: 0 10px;
+  padding: 0 8px;
   position: relative;
 }
 .navbar-wagon-search-btn {
-  line-height: 40px;
-  color: #E6E6E6;
+  line-height: 23px;
+  color: $red;
   border: none;
   background: transparent;
   position: absolute;
-  right: 14px;
-  top: -2px;
+  right: 5px;
+  top: -5px;
   z-index: 1;
 }
 .navbar-wagon-search-input {
@@ -129,3 +130,18 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+.input {
+    background-color: transparent;
+    border: 0px solid;
+    height: 20px;
+    width: 160px;
+    // color: #CCC;
+    border-bottom: 1px solid $red;
+    color: $red;
+}
+
+textarea:focus, .input:focus{
+    outline: none;
+}
+
