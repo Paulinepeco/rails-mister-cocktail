@@ -1,4 +1,4 @@
-<div class="navbar-wagon">
+<div class="navbar-wagon navbar-fixed-top">
   <!-- Logo -->
   <%= link_to cocktails_path, class: "navbar-wagon-brand" do %>
     <%= image_tag "logo.png" %>
@@ -18,7 +18,7 @@
     <!-- Button (call-to-action) -->
 
     <button type="button" class="navbar-wagon-item navbar-wagon-button btn" data-toggle="modal" data-target="#myModal">
-      New cockail !
+      New cocktail !
     </button>
 
     <!-- Modal -->
@@ -27,7 +27,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Create a coktail !</h4>
+            <h4 class="modal-title" id="myModalLabel">Create a cocktail !</h4>
           </div>
           <div class="modal-body">
             <%= render "cocktails/form" %>

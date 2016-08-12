@@ -1,4 +1,14 @@
-<div class="carrousel">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(210,51,51,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "marshmallows.jpg" %>');">
+  <div class="banner-content">
+    <h1>Unicorn cocktails</h1>
+    <p>To puke rainbow</p>
+  </div>
+</div>
+
+
+
+
+<div class="carrousel col-xs-8 col-xs-offset-2">
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -39,9 +49,9 @@
 </div>
 
 
-<h1>Here are all cocktails:</h1>
+<h1 class="col-xs-8 col-xs-offset-2">Here are all cocktails:</h1>
 
-<div class="row">
+<div class="row col-xs-8 col-xs-offset-2">
   <% @cocktails.each do |cocktail|%>
     <div class="col-xs-12 col-sm-6">
       <%= link_to cocktail_path(cocktail) do %>

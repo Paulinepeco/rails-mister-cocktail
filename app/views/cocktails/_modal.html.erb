@@ -1,0 +1,21 @@
+ <i class="fa fa-trash-o" aria-hidden="true" type="button" class="navbar-wagon-item navbar-wagon-button btn" data-toggle="modal" data-target="#delete_ingredient"></i>
+
+    <!-- Modal -->
+    <div class="modal fade" id="delete_ingredient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Which element do you want to delete ?</h4>
+          </div>
+          <div class="modal-body">
+              <% @cocktail.doses.each do |dose| %>
+                <li><%= dose.description %> <%= dose.ingredient.name %>
+                <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete, data: {confirm: "Are you sure?"} do %>
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                <% end %>
+              <% end %>
+          </div>
+        </div>
+      </div>
+    </div>

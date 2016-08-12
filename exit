@@ -1,0 +1,3 @@
+[0GNameError: undefined local variable or method `san_francisco' for main:Object
+from (pry):1:in `<main>'
+
