@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="content col-xs-12 col-sm-offset-2 col-sm-3">
+    <div class="content-show col-xs-12 col-sm-offset-2 col-sm-3">
 
       <h1><%= @cocktail.name %></h1>
       <%= link_to cocktails_path, class: "button" do %>
@@ -8,8 +8,11 @@
       <% end %>
         <i class="fa fa-trash-o button" aria-hidden="true" type="button" class="navbar-wagon-item navbar-wagon-button btn" data-toggle="modal" data-target="#delete_ingredient"></i>
       <%= render "cocktails/modal" %>
+      <%= render "cocktails/print" %>
+      <i class="fa fa-pencil button" aria-hidden="true" type="button" class="navbar-wagon-item navbar-wagon-button btn" data-toggle="modal" data-target="#edit"></i>
+      <%= render "cocktails/edit" %>
 
-      <h3>Composition:</h3>
+      <h3 style="font-size: 20px">Composition:</h3>
       <ul>
         <% @cocktail.doses.each do |dose| %>
           <li><%= dose.description %> <%= dose.ingredient.name %>

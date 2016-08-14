@@ -9,6 +9,8 @@
 .button {
   text-decoration: none;
   color: black;
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .button:hover {
@@ -19,4 +21,12 @@
 .ingredients {
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.content-show {
+  background-color: $gray-lighter;
+}
+
+h1 {
+  font-family: 'Damion', cursive;
 }
