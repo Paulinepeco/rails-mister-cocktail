@@ -5,3 +5,18 @@
 .image_container {
   margin-top: 40px;
 }
+
+.button {
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: $red;
+}
+
+.ingredients {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
